@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+}
+/* REM TUTORIAL SIIN: https://www.udemy.com/course/advanced-css-and-sass/learn/lecture/8274436#overview */
+html {
+  font-size: 10px;
+}
+
+:root {
+  /* COLOR */
+  --dark-pink: #c32865;
+  --lite-gray:#c32865;
+  /* FONT SIZE */
+  --h1-font-size: 9.2rem;
+  --h2-font-size: 4.7rem;
+  --p-font-size: 1.4rem;
+
+  /* FONT WEIGHT */
+  --h1-font-weight: 600;
+  --h2-font-weight: 600;
+  --p-font-weight: 200;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  font-size: 1.4rem;
+  line-height: 2.72rem;
+  letter-spacing: 0.35px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 9.2rem;
+  font-weight: 600;
+  line-height: 92px;
+  letter-spacing: -5.5px;
+}
+
+h2 {
+  font-size: 4.7rem;
+  font-weight: 600;
+  line-height: 6.33rem;
+  letter-spacing: -1.175px;
+
+}
+
+h6 {
+  font-size: 1.5rem;
+  font-weight:500;
+  line-height: 2rem;
+  letter-spacing: 2.996px;        
+}
+
+
+input {
+  outline: none;
+}
+
+/* RESUME PAGE */
+
+.resume {
+  background-image: url(../img/bg_img_1.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /* z-index: 0; */
+  top: 0;
+  left: 0;
+}
+
+.resume::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+  background-color: rgb(0 0 0 / 40%);
+}
+
+.resume__page-title {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 10rem;
+}
+
+.resume__page-title span {
+  font-size: 12rem;
+  font-weight: var(--h1-font-weight);
+  line-height: 92px;
+  letter-spacing: 0.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  transform: translate(-50%,-50%) rotate(-90deg);
+  text-align: center;
+  text-transform: lowercase;
+  opacity: .05;
+  color: rgb(255 255 255); 
+}
+
+
+.resume__content-container {
+  max-width: 1140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.resume__content-box {
+  width: 50%;
+  margin: 1.5rem;
+  background-color: rgb(255 255 255 / 10%);
+  padding: 5rem;
+  position: relative;
+  z-index: 10;
+  color: #fff;
+}
+
+.resume__content-box:hover {
+  background-color: var(--dark-pink);
+  transition-duration: .5s
+
+
+}
+
+.resume__content-box-title {
+  position: absolute;
+  z-index: 1;
+  top: -35px;
+  margin: 0;    
+}
+
+.resume__content-box-row {
+  border-top: 1px solid;
+  padding: 2.2rem 0;
+}
+
+/* Võtab 1. row border-top ära */
+.resume__content-box-row:first-of-type {
+  border-top: none;
+}
+
+.content-box__sub-title {
+  text-transform: uppercase;
+  padding: 2rem 0;
+}
+
+.resume__content-box--2 {
+  margin-top: 18rem;
+}
+
+
+/* FOOTER */
+.footer {
+ color: #fff;
+  position: fixed;
+  bottom: 0;
+  padding: 3.5rem 5.8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.footer__social img{
+  max-height: 1.5rem;
+}
+
+.footer__social ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__social {
+  width: 18rem;
+}
+
+/* HEADER */
+
+header {
+  z-index: 10;
+  position: relative;
+}
+
+.nav-bar__main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  margin: 3.7rem 5.8rem;
+}
+
+.nav-bar--left {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-bar--left nav ul{
+  display: flex;
+  flex-direction: row;
+  margin-left: 14.5rem;
+  list-style: none;
+}
+
+.nav-bar--left .separator {
+  margin: 0 3.2rem;
+  color: var(--lite-gray);
+}
+
+
+#nav-bar__logo,
+#nav-bar__logo span
+ {
+  font-size: 3rem;
+  line-height: 0;
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+/* #nav-bar__logo span {
+  color: var(--dark-pink);
+} */
+
+.nav-bar--left a {
+  color: #fff;
+  font-size: var(--p-font-size);
+  text-decoration: none;
+  font-weight: var(--p-font-weight);
+}
+.nav-bar--left a:hover {
+  text-decoration: underline;
+}
