@@ -13,48 +13,145 @@
 
   <header>
     <div class="nav-bar__main">
+      
       <div class="nav-bar--left">
         <a id="nav-bar__logo" href="#"><span>E</span>rvet <span>K</span>iolein</a>
         <nav>
           <ul>
-            <li><a href="tel:">+372 581 419 49</a></li>
+            <li><a href="tel:">+372 5814 1949</a></li>
             <li class="separator">/</li>
             <li><a href="mailto:ervet@kiolein.ee">ervet@kiolein.ee</a></li>
           </ul>
         </nav>
       </div>
       <div class="nav-bar--right">
-        <div class="nav-bar__burger-box">
-          <a href="" class="nav-bar__burger">
-            <span>XXX</span>
-          </a>
+        <div  onclick="ava()" id="burger" class="nav-bar__burger-box">
+            <div class="nav-bar__burger">
+              <span class="nav-bar__burger-line nav-bar__burger-line--1">
+                <span></span>
+              </span>
+              <span class="nav-bar__burger-line nav-bar__burger-line--2">
+                <span></span>
+              </span>
+              <span class="nav-bar__burger-line nav-bar__burger-line--3">
+                <span></span>
+              </span>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="aside-nav__wrapper" style="display: none;"">
+      <div class="aside-nav">
+        <div class="aside-nav__header">
+            <div  onclick="sulge()" id="nav-bar__burger--open" class="aside-nav__burger aside-nav__burger-open" href="#">
+              <span class="burger-open__line line-1">
+                <span></span>
+              </span>
+              <span class="burger-open__line line-3">
+                <span></span>
+              </span>
+            </div>
+     
+        </div>
+        <nav class="aside-nav__navigation">
+          <ul>
+            <li><a href="#">Avaleht</a></li>
+            <li><a href="#minust">Minust</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#">Kontakt</a></li>
+          </ul>
+        </nav>
+        <div class="aside-nav__footer">
+          <div class="aside-nav__footer-social">
+            <ul>
+              <li><a href="https://www.facebook.com/ervet.kiolein" target="_blank"><img src="./img/fb_icon.png" alt="Facebook ikoon"></a></li>
+              <li><a href="https://www.instagram.com/ervetk/" target="_blank"><img src="./img/ig_icon.png" alt="Instagram ikoon"></a></li>
+              <li><a href="https://www.linkedin.com/in/ervet-kiolein-574126107/" target="_blank"><img src="./img/li_icon.png" alt="LinkedIn ikoon"></a></li>
+              <li><a href="https://github.com/Ervetk" target="_blank"><img src="./img/gh_icon.png" alt="GitHub ikoon"></a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </header>
 
-  <section>
-    <div class="resume">
-      <!-- BOX 1 -->
-      <div class="resume__page-title"><span>Resume</span></div>
+  <!-- HOME -->
+  <section class="u-content-section">
+    <div class="u-content-container content-container__home">
+      <div class="u-content-container__page-title content-container__page-title--home-section"><span></span></div>
+      <div class="home-page__wrapper">
+        <div class="home-page__profile-picture">
+          <img src="./img/profile-pic__img.png" alt="Ervet Kiolein profiili pilt">
+        </div>
+        <div class="home-page__title"><h1><span>Hei,</span><br> mina olen Ervet</h1></div>
+      </div>
+      <!-- <div class="u-content-container__page-title"><span>Minust</span></div> -->
+      <!-- <div class="resume__content-container"> -->
+        <div class="arrow"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- MINUS  -->
+  <section id="minust" class="u-content-section">
+    <div class="u-content-container content-container__about-me">
+      <div class="u-content-container__page-title"><span>Minust</span></div>
       <div class="resume__content-container">
-        <div class="resume__content-box--1 resume__content-box">
-          <h2 class="resume__content-box-title">Education</h2>
+        
+        <!-- TEXT BOX -->
+        <div class="u-content-box u-content-box--full-width about-me__text-box ">
+          <img src="./img/quote_img_3.png" alt="pilt" class="about-me__qoute-img">
+          <h2 class="resume__content-box-title"></h2>
+          <div class="resume__content-box-row">
+           
+          </div>
+          <div class="resume__content-box-row">
+            <h6 class="content-box__sub-title">Kes ma olen</h6>
+            <p class="content-box__content">Ma olen Ervet, olen inimene kellele meeldib mõelda suurelt ning minu mõtted on enamasti ainult positiivsed ja tulevikule suunatud. Proovin iga päev elada nii suure naudinguga kui võimalik ning teen seda viimasel ajal väga hästi. Olen sõbralik inimene kes suudab sujuvalt luua suhteid väga erinevate inimestega, olenemata soost, rassist, nahavärvis, usust või mõnest muust inimeste lahterdamise kategooriast. Ma olen kindlalt seda meelt, et inimsuhted on kõige alus siin elus, eriti kui soov on edu saavutada ja olla õnnelik. Mulle meeldib väga palju Eesti kuid pean ennast hingelt pigem maailmakodanikuks.<br><br>
+              Mind huvitavad väga erinevad innovaatilised vidinad meie ümber, asjad mis muudavad meie tänapäeva elu mugavaks ja põnevaks. Seepärast olen viimased aastad väga palju uurinud erinevaid külgi digivaldkonnast ning püüdnud leida enda kohta selles mega kirevas ja väga kiiresti muutuvas maailmas. Praeguseks olen jõudnud sinnamaani, et plaanin midagi suurt, suurt siis kas enda jaoks või miks mitte ka laiemale maailmale, ära teha veebitehnoloogiate maailmas. Kuna  tunnen end praegu mugavamalt valdkonnas mis on pigem visuaalsem kui abstraktne siis olen valinud arengusuunaks front-end veebitehnoloogiate maailma ning kavatsengi järgmised aastad sellele pühenduda. Sealt edasi siis juba laiapõhjalisemaks veebiarendajaks jne, kes teab kuhu see kõik jõuab…<br><br>
+              Vabal ajal meeldib palju veeta välismaal ringi reisides. Samuti meeldib mulle sportida enda lõbuks, mulle meeldib väga kokata, loen ja kuulan üsna palju raamatuid ning kui midagi muud teha ei viitsi siis vaatan meeleldi mõnda põnevad dokumentaalfilmi. Olen ka väga suur finantsilise vabaduse mõttemaailma fänn ning tegutsen selle unistuse realiseerumisega igapäevaselt.
+              
+            </p>
+          </div>
+
+        </div> 
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME -->
+  <section id="resume" class="u-content-section ">
+    <div class="u-content-container content-container__resume">
+      <div class="u-content-container__page-title"><span>Resume</span></div>
+      <!-- BOX 1 -->
+      <div class="resume__content-container">
+        <div class="resume__content-box--1 u-content-box u-content-box--hover-on">
+          <h2 class="resume__content-box-title">Õppeteekond</h2>
             <div class="resume__content-box-row">
-              <h6 class="content-box__sub-title">Specialization course</h6>
-              <p class="content-box__content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio fuga labore a, possimus iure accusamus mollitia vero, exercitationem obcaecati hic commodi ipsa dolor iusto consequuntur voluptatibus, voluptatem necessitatibus eligendi?</p>
+              <h6 class="content-box__sub-title">Üldine info</h6>
+              <p class="content-box__content">Oluliste veebitehnoloogiate selgeks tegemiseks olen kasutanud peamiselt online self-study ehk iseõppimis keskondi nagu Udemy, arendajate enda koolituskeskkonnad, Google ning Youtube. Olen paljude teemadega kokku puutunud ka erinevates IT-alastes projektides osaledes.</p>
             </div>
             <div class="resume__content-box-row">
-              <h6 class="content-box__sub-title">Specialization course</h6>
-              <p class="content-box__content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam mollitia impedit quo, libero quas quae doloremque consequatur, laborum ullam suscipit cum temporibus hic fugit facilis eligendi incidunt deserunt vel odit?</p>
+              <h6 class="content-box__sub-title">Mõned läbitud koolitused</h6>
+              <div class="content-box__content content-box__content--list">
+                <ul>
+                  <li><img src="./img/arrow-right_icon.png" alt="icon"><a href="https://www.udemy.com/course/advanced-css-and-sass/" target="_blank">Advanced CSS and Sass by Jonas Schmedtmann</a></li>
+                  <li><img src="./img/arrow-right_icon.png" alt="icon"><a href="https://www.udemy.com/course/modern-javascript-from-novice-to-ninja/" target="_blank">Modern JavaScript (Complete guide, from Novice to Ninja) by The Net Ninja (Shaun Pelling)</a></li>
+                  <li><img src="./img/arrow-right_icon.png" alt="icon"><a href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/" target="_blank">React - The Complete Guide (incl Hooks, React Router, Redux) by Maximilian Schwarzmüller</a></li>
+                  <li><img src="./img/arrow-right_icon.png" alt="icon"><a href="">Full Modern React Tutorial by The Net Ninja (Shaun Pelling) </a></li>
+                  <li><img src="./img/arrow-right_icon.png" alt="icon"><a href="">The Complete JavaScript Course 2021: From Zero to Expert!  by Jonas Schmedtmann</a></li>
+                </ul>
+              </div>
             </div>
         </div>
         <!-- BOX 2 -->
-        <div class="resume__content-box--2 resume__content-box">
-          <h2 class="resume__content-box-title">Experience</h2>
+        <div class="resume__content-box--2 u-content-box u-content-box--hover-on">
+          <h2 class="resume__content-box-title">Kogemused</h2>
           <div class="resume__content-box-row">
-            <h6 class="content-box__sub-title">Specialization course</h6>
-            <p class="content-box__content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio fuga labore a, possimus iure accusamus mollitia vero, exercitationem obcaecati hic commodi ipsa dolor iusto consequuntur voluptatibus, voluptatem necessitatibus eligendi?</p>
+            <h6 class="content-box__sub-title">Üldine info</h6>
+            <p class="content-box__content">Alates 2016 aastast olen tegutsenud IT-valdkonnas. Alustasin müügi ja projektijuhina ühes väiksemas veebiarendus ettevõttes. Antud töökogemusega tekkis huvi ka tehnilise poole vastu. Peale seda liikusin edasi freelancerina, tehes enamasti erinevaid Wordpressiga seotud projekte.</p>
           </div>
           <div class="resume__content-box-row">
             <h6 class="content-box__sub-title">Specialization course</h6>
@@ -64,6 +161,9 @@
       </div>
     </div>
   </section>
+
+  
+
   <!-- FOOTER -->
   <footer class="footer">
     <div class="footer__copyright">
@@ -79,5 +179,43 @@
     </div>
   </footer>
 
+
+
+  <script>
+    function ava() {
+      console.log('ter')
+
+
+
+      let x = document.getElementById("aside-nav__wrapper");
+      let close = document.getElementById("nav-bar__burger--open")
+   
+
+      if (x.style.display === "none") {
+        console.log('burger klik')
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+
+    function sulge() {
+      console.log('ter')
+
+
+
+      let x = document.getElementById("aside-nav__wrapper");
+      let close = document.getElementById("nav-bar__burger--open")
+   
+
+      if (x.style.display === "none") {
+        console.log('burger klik close')
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script>
+    
 </body>
 </html>
